@@ -1,0 +1,12 @@
+{
+  "name": "gcode-to-png",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "file-url": "^3.0.0",
+    "gcode-preview": "^2.2.0",
+    "glob": "^7.1.6",
+    "puppeteer": "^7.0.4"
+  }
+}
