@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <style>
+      html, body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+      }
+  
+      .gcode-previewer canvas {
+        width: 100%;
+        height: 100%;
+      }
+  
+      #renderer {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <canvas id="renderer" class="gcode-previewer"></canvas>
+    <script src="node_modules/three/build/three.min.js"></script>
+    <script src="node_modules/three/examples/js/controls/OrbitControls.js"></script>
+    <script src="node_modules/gcode-preview/dist/gcode-preview.js"></script>
+    <script>
+      gcodePreview = new GCodePreview.WebGLPreview({
+        canvas: document.querySelector('.gcode-previewer'),
+        initialCameraPosition: [333,333,333], // color `hsl(25, 80%, ${i}%)`
+        renderExtrusion: true,
+        renderTravel: false
+      });
+    </script>
+  </body>
+</html>
