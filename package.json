@@ -8,5 +8,8 @@
     "gcode-preview": "^2.2.0",
     "glob": "^7.1.6",
     "puppeteer": "^7.0.4"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1"
   }
 }
